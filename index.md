@@ -1,4 +1,7 @@
 ---
+title: Home
 ---
 
-# tonic-starter
+# ash-theme
+
+ash-theme is a jekyll theme
