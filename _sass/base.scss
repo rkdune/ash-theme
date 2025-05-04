@@ -1,7 +1,12 @@
 body {
-    background-color: #222222;
-    font-family: sans-serif;
-    margin: auto;
-    max-width: 70ch;
-    color: #D7D5D5;
-  }
+  background-color: #222222;
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: auto;
+  max-width: 70ch;
+  color: #D7D5D5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  margin-top: 50px;
+}
