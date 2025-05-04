@@ -5,4 +5,4 @@ layout: default
 
 # ash-theme
 
-ash-theme is a jekyll theme
+ash-theme is a minimalistic jekyll theme
