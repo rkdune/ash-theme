@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="wrapper">
+    <div class="header-content">
+      <div class="site-info">
+        {% if site.title %}
+          <h1 class="site-title">{{ site.title }}</h1>
+        {% endif %}
+        {% if site.description %}
+          <p class="site-description">{{ site.description }}</p>
+        {% endif %}
+      </div>
+      {% if site.profile_image %}
+        <div class="profile-image">
+          <img src="{{ site.profile_image | relative_url }}" alt="{{ site.profile_image_alt | default: 'Profile Image' }}">
+        </div>
+      {% endif %}
+    </div>
+    <hr>
+  </div>
+  
+</header> 

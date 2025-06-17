@@ -1,6 +1,6 @@
 body {
   background-color: #222222;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto Slab', Arial, sans-serif;
   margin: auto;
   max-width: 70ch;
   color: #D7D5D5;
@@ -9,4 +9,51 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', Georgia, serif;
   margin-top: 50px;
+}
+
+.wrapper {
+  padding: 0 1rem;
+}
+
+.site-header {
+  margin-top: 2rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.site-info {
+  flex-grow: 1;
+}
+
+.site-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.site-description {
+  margin-top: 0;
+  font-weight: 300;
+  max-width: 45ch;
+}
+
+.profile-image img {
+  max-width: 100px;
+  max-height: 100px;
+  height: auto;
+  margin-left: 1.5rem;
+  border-radius: 50%;
+}
+
+.page-content {
+  margin-top: 2rem;
+}
+
+hr {
+  border: none;
+  height: 0.2px;
+  background-color: #727272;
 }

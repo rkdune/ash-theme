@@ -1,5 +1,10 @@
-title: ash-theme
-description: "a jekyll theme"
+title: Ash Theme
+description: "A minimalistic Jekyll theme priotizing calm, simplicity, and elegance. Made by Rohan."
 encoding: utf-8
+
+# Profile image settings
+# Uncomment and update these lines to show a profile image
+profile_image: /assets/images/profile_square.jpg
+profile_image_alt: "Author profile picture"
 
 exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
