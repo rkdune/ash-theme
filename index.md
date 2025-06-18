@@ -3,4 +3,4 @@ title: Home
 layout: default
 ---
 
-Index
+{% include posts-list.html %}
