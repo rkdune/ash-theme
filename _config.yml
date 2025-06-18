@@ -4,7 +4,7 @@ encoding: utf-8
 
 # Profile image settings
 # Uncomment and update these lines to show a profile image
-profile_image: /assets/images/flowers.png
+profile_image: /assets/images/gurney.png
 profile_image_alt: "Author profile picture"
 
 exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
