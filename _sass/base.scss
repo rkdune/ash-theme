@@ -151,3 +151,22 @@ hr {
     }
   }
 }
+
+/* Soft warm orange glow from bottom */
+body::after {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(
+    to top,
+    rgba(255, 100, 20, 0.18) 0%,
+    rgba(255, 120, 35, 0.12) 30%,
+    rgba(255, 160, 80, 0.06) 60%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
