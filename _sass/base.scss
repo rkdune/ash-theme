@@ -170,3 +170,21 @@ body::after {
   pointer-events: none;
   z-index: -1;
 }
+
+/* Back navigation link */
+.post-nav {
+  margin-bottom: 0rem;
+  
+  .back-link {
+    display: inline-block;
+    color: #7b7b7b;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: 'Roboto', Arial, sans-serif;
+    transition: color 0.2s ease;
+    
+    &:hover {
+      color: #D7D5D5;
+    }
+  }
+}
