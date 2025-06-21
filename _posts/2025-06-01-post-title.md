@@ -11,8 +11,8 @@ You're thinking like a duke's son instead of a dead man, young master—that pre
 ## H2 headers look great
 ### H3 headers are also amazing
 
-### You can add images like this  
-
+### You can add images like this    
+ 
 ```python
 ![Gurney Halleck](/assets/images/gurney.png){: style="width: 50%; max-width: 50%;"}
 ```

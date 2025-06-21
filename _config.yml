@@ -2,6 +2,9 @@ title: Ash Theme
 description: "A cozy Jekyll theme prioritizig calm and simplicity. Made by @rkdune"
 encoding: utf-8
 
+# Theme mode setting - "dark" or "light"
+theme_mode: light
+
 # Profile image settings
 # Uncomment and update these lines to show a profile image
 profile_image: /assets/images/gurney.png

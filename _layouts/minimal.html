@@ -1,6 +1,6 @@
 <html>
 {% include head.html %}
-  <body>
+  <body{% if site.theme_mode == "light" %} class="theme-light"{% endif %}>
     <main class="page-content">
       <div class="wrapper">
         {{ content }}
