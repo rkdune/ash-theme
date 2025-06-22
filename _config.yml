@@ -10,4 +10,7 @@ theme_mode: light
 profile_image: /assets/images/gurney.png
 profile_image_alt: "Author profile picture"
 
+# Social links
+github_username: rkdune/ash-theme
+
 exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]

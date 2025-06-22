@@ -1,10 +1,13 @@
 <html>
 {% include head.html %}
   <body{% if site.theme_mode == "light" %} class="theme-light"{% endif %}>
-    <main class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+    <div class="page-container">
+      <main class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
+      {% include footer.html %}
+    </div>
   </body>
 </html>

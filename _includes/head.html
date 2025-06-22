@@ -4,4 +4,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      // Initialize theme on page load
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        const defaultTheme = '{{ site.theme_mode | default: "dark" }}';
+        
+        if (savedTheme) {
+          document.body.className = savedTheme === 'light' ? 'theme-light' : '';
+        } else if (defaultTheme === 'light') {
+          document.body.className = 'theme-light';
+        }
+      })();
+      
+      function toggleTheme() {
+        const body = document.body;
+        const isLight = body.classList.contains('theme-light');
+        
+        if (isLight) {
+          body.classList.remove('theme-light');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          body.classList.add('theme-light');
+          localStorage.setItem('theme', 'light');
+        }
+      }
+    </script>
   </head>

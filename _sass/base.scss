@@ -27,16 +27,28 @@ body.theme-light {
   --border-color: #dddddd;
   --post-border-color: #e5e5e5;
   
-  /* Light theme glow colors (green) */
-  --glow-color-1: rgba(34, 197, 94, 0.12);
-  --glow-color-2: rgba(74, 222, 128, 0.08);
-  --glow-color-3: rgba(134, 239, 172, 0.04);
+  /* Light theme glow colors (blue) */
+  --glow-color-1: rgba(59, 130, 246, 0.12);
+  --glow-color-2: rgba(96, 165, 250, 0.08);
+  --glow-color-3: rgba(147, 197, 253, 0.04);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: auto;
   max-width: 70ch;
 }
@@ -86,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-content {
   margin-top: 2rem;
+  flex: 1;
 }
 
 hr {
@@ -217,10 +230,64 @@ body::after {
   background: linear-gradient(
     to top,
     var(--glow-color-1) 0%,
-    var(--glow-color-2) 30%,
-    var(--glow-color-3) 60%,
+    var(--glow-color-2) 40%,
+    var(--glow-color-3) 80%,
     transparent 100%
   );
   pointer-events: none;
   z-index: -1;
+}
+
+/* Footer styles */
+.site-footer {
+  margin-top: auto;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--subtle-color);
+  text-decoration: none;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: var(--text-color);
+  }
+}
+
+.github-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* Theme toggle styles */
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--subtle-color);
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.25rem;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: var(--text-color);
+  }
+  
+  .theme-toggle-icon {
+    display: block;
+    line-height: 1;
+  }
 }
