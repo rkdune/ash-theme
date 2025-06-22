@@ -17,7 +17,7 @@
 }
 
 /* Light theme colors */
-body.theme-light {
+html.theme-light {
   --bg-color: #fafafa;
   --text-color: #2c2c2c;
   --link-color: #0066cc;
@@ -28,7 +28,7 @@ body.theme-light {
   --post-border-color: #e5e5e5;
   
   /* Light theme glow colors (blue) */
-  --glow-color-1: rgba(59, 130, 246, 0.25);
+  --glow-color-1: rgba(0, 98, 255, 0.25);
   --glow-color-2: rgba(96, 165, 250, 0.18);
   --glow-color-3: rgba(147, 197, 253, 0.12);
 }

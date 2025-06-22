@@ -5,27 +5,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
-      // Initialize theme on page load
-      (function() {
+      function applyTheme() {
         const savedTheme = localStorage.getItem('theme');
         const defaultTheme = '{{ site.theme_mode | default: "dark" }}';
         
-        if (savedTheme) {
-          document.body.className = savedTheme === 'light' ? 'theme-light' : '';
+        console.log('Applying theme:', { savedTheme, defaultTheme });
+        
+        // localStorage takes absolute priority
+        if (savedTheme === 'light') {
+          document.documentElement.classList.add('theme-light');
+        } else if (savedTheme === 'dark') {
+          document.documentElement.classList.remove('theme-light');
         } else if (defaultTheme === 'light') {
-          document.body.className = 'theme-light';
+          document.documentElement.classList.add('theme-light');
+        } else {
+          document.documentElement.classList.remove('theme-light');
         }
-      })();
+      }
+      
+      // Apply theme immediately on script load
+      applyTheme();
+      
+      // Re-apply theme when page is shown (handles browser back button)
+      window.addEventListener('pageshow', function(event) {
+        console.log('Page shown, re-applying theme');
+        applyTheme();
+      });
       
       function toggleTheme() {
-        const body = document.body;
-        const isLight = body.classList.contains('theme-light');
+        const isLight = document.documentElement.classList.contains('theme-light');
+        
+        console.log('Toggle theme:', { isLight, willBe: isLight ? 'dark' : 'light' });
         
         if (isLight) {
-          body.classList.remove('theme-light');
+          document.documentElement.classList.remove('theme-light');
           localStorage.setItem('theme', 'dark');
         } else {
-          body.classList.add('theme-light');
+          document.documentElement.classList.add('theme-light');
           localStorage.setItem('theme', 'light');
         }
       }
