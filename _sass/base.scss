@@ -24,7 +24,7 @@ html.theme-light {
   --link-hover-color: #004499;
   --muted-color: #666666;
   --subtle-color: #777777;
-  --border-color: #dddddd;
+  --border-color: rgba(221, 221, 221, 0.8);
   --post-border-color: #e5e5e5;
   
   /* Light theme glow colors (blue) */
@@ -249,6 +249,13 @@ body::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .github-link {
@@ -266,6 +273,19 @@ body::after {
   }
 }
 
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--subtle-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: var(--text-color);
+  }
+}
+
+.email-icon,
 .github-icon {
   width: 16px;
   height: 16px;

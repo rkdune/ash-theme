@@ -11,6 +11,7 @@ profile_image: /assets/images/gurney.png
 profile_image_alt: "Author profile picture"
 
 # Social links
+email: rohantkalia [at] gmail [dot] com
 github_username: rkdune/ash-theme
 
 exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
