@@ -1,6 +1,8 @@
 # Ash Theme
 A cozy Jekyll theme prioritizig *calm* and *simplicity*. Made by @rkdune.
 
+See a template preview at: https://ash-theme.vercel.app/
+
 ![Demo GIF](assets/images/demo.gif)
 
 
